@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+/* Header */
+header {
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    text-align: center;
+    padding: 2rem 1rem 1.5rem;
+}
+
+header h1 {
+    font-family: var(--fonte-titulo);
+    font-size: 1.8rem;
+    letter-spacing: 0.5px;
+}
+
+/* Menu/Navegação */
+nav {
+    background-color: var(--azul-claro);
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 0.8rem 1rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    font-family: var(--fonte-texto);
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--azul-escuro);
+    text-decoration: none;
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+nav a:hover {
+    border-bottom-color: var(--laranja);
+}
+
+nav a.active {
+    color: var(--laranja);
+    border-bottom-color: var(--laranja);
+}
+
+/* Conteúdo principal */
+main {
+    max-width: 900px;
+    margin: 2.5rem auto;
+    padding: 0 1.5rem;
+}
+
+main h2 {
+    text-align: center;
+    font-family: var(--fonte-titulo);
+    font-size: 1.6rem;
+    color: var(--azul-escuro);
+    margin-bottom: 1rem;
+}
+
+main p {
+    font-family: var(--fonte-texto);
+    color: var(--texto);
+    line-height: 1.7;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 3rem;
+    color: var(--texto-suave);
+    font-size: 0.85rem;
+    border-top: 1px solid var(--azul-claro);
+}
+
+footer a {
+    color: var(--texto-suave);
+    text-decoration: none;
+}
