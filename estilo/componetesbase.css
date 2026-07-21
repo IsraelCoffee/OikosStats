@@ -3,7 +3,6 @@
 /* Header */
 header {
     background-color: var(--azul-escuro);
-    color: var(--branco);
     text-align: center;
     padding: 2rem 1rem 1.5rem;
 }
@@ -12,6 +11,16 @@ header h1 {
     font-family: var(--fonte-titulo);
     font-size: 1.8rem;
     letter-spacing: 0.5px;
+}
+
+header a {
+    color: var(--branco);
+    text-decoration: none;
+}
+
+/*Evitar que mude de cor quando clicado*/
+header a:visited {
+    color: var(--branco);
 }
 
 /* Menu/Navegação */
@@ -52,7 +61,6 @@ main {
 }
 
 main h2 {
-    text-align: center;
     font-family: var(--fonte-titulo);
     font-size: 1.6rem;
     color: var(--azul-escuro);
