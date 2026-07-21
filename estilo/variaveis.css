@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+:root {
+    /* Azuis - cor principal (header, nav, links) */
+    --azul-escuro: rgb(26, 60, 94);    /* header, texto de destaque */
+    --azul-medio: rgb(45, 106, 159);     /* hover, botões secundários */
+    --azul-claro: rgb(234, 242, 250);     /* fundos suaves, cards alternados */
+
+    /* Laranja - cor de destaque (CTAs, indicadores, alertas) */
+    --laranja: rgb(232, 135, 30);        /* botões de ação, destaque no índice */
+    --laranja-claro: rgb(253, 236, 216);  /* fundos suaves de destaque */
+
+    /* Neutros */
+    --cinza-fundo: rgb(244, 244, 244);    /* fundo geral da página */
+    --branco: rgb(255, 255, 255);         /* cards, painéis */
+    --texto: rgb(44, 44, 44);          /* texto principal */
+    --texto-suave: rgb(102, 102, 102);    /* texto secundário, rodapé */
+}
