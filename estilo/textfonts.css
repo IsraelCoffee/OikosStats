@@ -1,1 +1,15 @@
 @charset "UTF-8";
+
+@charset "UTF-8";
+
+body {
+    font-family: var(--fonte-texto);
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--texto);
+}
+
+h1, h2, h3 {
+    font-family: var(--fonte-titulo);
+    font-weight: 600;
+}

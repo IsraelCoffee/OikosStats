@@ -16,3 +16,10 @@
     --texto: rgb(44, 44, 44);          /* texto principal */
     --texto-suave: rgb(102, 102, 102);    /* texto secundário, rodapé */
 }
+
+:root {
+    /* Fontes para os textos */
+
+    --fonte-titulo: 'Poppins', sans-serif;
+    --fonte-texto: 'Inter', sans-serif;
+}
