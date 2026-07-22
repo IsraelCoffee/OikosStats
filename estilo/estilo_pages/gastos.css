@@ -22,7 +22,7 @@ main h2 {
 
 .grid-deputados-secao > div {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     gap: 1.2rem;
     margin-top: 1.5rem;
 }
