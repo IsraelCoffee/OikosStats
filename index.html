@@ -19,10 +19,44 @@
 
     <!-- Visivel ao site-->
     <title>Oikos Stats</title>
+
+    <!-- Estilos internos-->
+    <style>
+
+        .boas-vindas {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+        }
+
+        .texto-boas-vindas {
+            background-color: #94949446;
+            box-shadow: 1px 2px #00000049;
+            padding: 10px;
+            border-radius: 10px;
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .imagem-boas-vindas {
+            flex: 1;
+            min-width: 280px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .imagem-boas-vindas img {
+            max-width: 60%;
+            height: auto;
+        }
+
+    </style>
 </head>
 <body>
     <!-- Cabeçalho -->
     <header>
+        <img src="imagens/logo.png" alt="logo">
         <h1><a href="index.html">Oikos Stats</a></h1>
     </header>
 
@@ -38,15 +72,22 @@
 
     <!-- Conteúdo Principal -->
     <main>
-        <h2>Bem Vindo(a)!</h2>
-        <p>Esse site nasceu da minha curiosidade em entender melhor como funcionam as eleições no Distrito Federal — quem vota em quem, onde os votos se concentram e o que acontece depois que o mandato começa. Aqui você vai encontrar estatísticas eleitorais, gastos parlamentares e um comparativo entre o que foi prometido e o que realmente virou lei. Tudo feito com dados públicos e bastante café.</p>
+        <div class="boas-vindas">
+            <section class="texto-boas-vindas">
+                <h2>Bem Vindo(a)!</h2>
+                <p>Esse site nasceu da minha curiosidade em entender melhor como funcionam as eleições no Distrito Federal — quem vota em quem, onde os votos se concentram e o que acontece depois que o mandato começa. Aqui você vai encontrar estatísticas eleitorais, gastos parlamentares e um comparativo entre o que foi prometido e o que realmente virou lei. Tudo feito com dados públicos e bastante café.</p>
+            </section>
+
+            <section class="imagem-boas-vindas">
+                <img src="imagens/logo criança.png" alt="">
+            </section>
+        </div>
     </main>
 
     <!-- Rodapé -->
      <footer>
         <p>Site criado por Israel Lisbôa</p>
         <p>Contato:</p>
-        
         <a href="https://www.linkedin.com/in/israel-lisb%C3%B4a-b02497351/" target="_blank">Linkedin</a>
      </footer>
 </body>
