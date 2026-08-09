@@ -6,3 +6,55 @@
     border: none;
     border-radius: 10px;
 }
+
+
+/* Parte da página estatisticas.html*/
+.slider-mapas {
+    text-align: center;
+}
+
+.slider-foto {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    border: 3px solid var(--azul-claro);
+    margin: 1rem auto 0.3rem;
+    display: block;
+}
+
+.slider-nome {
+    font-family: var(--fonte-titulo);
+    font-weight: 600;
+    color: var(--azul-escuro);
+    margin-bottom: 1rem;
+}
+
+.slider-botoes {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.slider-botoes button {
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    border: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: var(--fonte-texto);
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+.slider-botoes button:hover {
+    background-color: var(--azul-medio);
+}
+
+.slider-botoes button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
