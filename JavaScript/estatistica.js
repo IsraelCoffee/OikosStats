@@ -6,15 +6,16 @@
 // AJUSTA os caminhos abaixo conforme sua pasta real de mapas
 const deputados = [
     {
-        nome: "Eduardo Weyne Pedrosa",
-        foto: "https://www.cl.df.gov.br/documents/10162/33185635/Eduardo+Pedrosa+-+2023-2026.jpg/ddcae86f-fc1c-a6a3-1457-7445f12ae55a?version=1.0&t=1740158438342&download=true&imageThumbnail=3",
-        mapa: "../graficos-interativos/mapas/mapa-eduardo-weyne.html"
-    },
-    {
         nome: "Fábio Felix Silveira",
         foto: "https://www.cl.df.gov.br/documents/10162/33185635/F%C3%A1bio+Felix+-+2023-2026.jpg/f2661d4d-16ad-c0c5-80f5-6175a3c2f9cd?version=1.1&t=1740158487152&download=true&imageThumbnail=3",
-        mapa: "../graficos-interativos/mapas/mapa-fabio-felix.html"
+        mapa: "../graficos interativos/mapas/mapa-fabio-felix.html"
+    },
+    {
+        nome: "Eduardo Weyne Pedrosa",
+        foto: "https://www.cl.df.gov.br/documents/10162/33185635/Eduardo+Pedrosa+-+2023-2026.jpg/ddcae86f-fc1c-a6a3-1457-7445f12ae55a?version=1.0&t=1740158438342&download=true&imageThumbnail=3",
+        mapa: "../graficos interativos/mapas/mapa-eduardo-weyne.html"
     }
+    
     // ... continua pros outros 22, seguindo o mesmo padrão { nome, foto, mapa }
 ];
 
