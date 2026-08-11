@@ -2,12 +2,77 @@
 
 body h2 {
     text-align: center;
+    margin: 20px;
+    padding-bottom: 20px;
 }
 
-.grafico-estatico {
-    max-width: 100px;
+/*INSTAGRAM*/
+
+.grafico-estatico img {
+    max-width: 900px;
     width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
 }
+
+/*ANIMAÇÃO*/
+
+.revelacao-wrapper {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.btn-revelar {
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+    font-family: var(--fonte-texto);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-revelar:hover {
+    background-color: var(--azul-medio);
+    transform: scale(1.03);
+}
+
+.btn-revelar.escondido {
+    display: none;
+}
+
+.resultado-revelacao {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: var(--branco);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 2rem;
+
+    /* Estado inicial: invisível e levemente deslocado pra baixo */
+    opacity: 0;
+    transform: translateY(15px);
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s ease, transform 0.5s ease, max-height 0.5s ease, padding 0.5s ease;
+}
+
+.resultado-revelacao.visivel {
+    opacity: 1;
+    transform: translateY(0);
+    max-height: 300px;
+    padding: 2rem;
+}
+
+.resultado-destaque {
+    font-family: var(--fonte-titulo);
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--laranja);
+    margin: 0.8rem 0;
+}
+

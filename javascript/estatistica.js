@@ -171,3 +171,16 @@ btnAntes.addEventListener("click", () => {
 if (sliderFoto) {
     atualizarSlider();
 }
+
+// ==========================================
+// Revelação do voto mais votado (página Estatísticas)
+// ==========================================
+const btnRevelar = document.getElementById("btn-revelar");
+const resultadoRevelacao = document.getElementById("resultado-revelacao");
+
+if (btnRevelar) {
+    btnRevelar.addEventListener("click", () => {
+        resultadoRevelacao.classList.add("visivel");
+        btnRevelar.classList.add("escondido");
+    });
+}
