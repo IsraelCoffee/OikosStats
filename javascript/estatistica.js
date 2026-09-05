@@ -6,6 +6,21 @@
 // AJUSTA os caminhos abaixo conforme sua pasta real de mapas
 const deputados = [
     {
+        nome: "Voto Branco",
+        foto: "https://i.pinimg.com/736x/8a/1d/1b/8a1d1b2e5edf46a0070ecd319f14ca8e.jpg",
+        mapa: "../graficos-interativos/mapas/mapa-branco.html"
+    },
+    {
+        nome: "Voto Nulo",
+        foto: "https://i.pinimg.com/736x/8a/1d/1b/8a1d1b2e5edf46a0070ecd319f14ca8e.jpg",
+        mapa: "../graficos-interativos/mapas/mapa-nulo.html"
+    },
+    {
+        nome: "Voto Abstenção",
+        foto: "https://i.pinimg.com/736x/8a/1d/1b/8a1d1b2e5edf46a0070ecd319f14ca8e.jpg",
+        mapa: "../graficos-interativos/mapas/mapa-abstencao.html"
+    },
+    {
         nome: "Fábio Felix Silveira",
         foto: "https://www.cl.df.gov.br/documents/10162/33185635/F%C3%A1bio+Felix+-+2023-2026.jpg/f2661d4d-16ad-c0c5-80f5-6175a3c2f9cd?version=1.1&t=1740158487152&download=true&imageThumbnail=3",
         mapa: "../graficos-interativos/mapas/mapa-fabio-felix.html"
@@ -33,7 +48,7 @@ const deputados = [
     {
         nome: "Jane Klebia do Nascimento Silva Reis",
         foto: "https://www.cl.df.gov.br/documents/10162/33185635/Doutora+Jane.jpg/1e8b063e-d237-70e7-2c8f-ac54f3e5ba44?version=1.0&t=1740158571217&download=true&imageThumbnail=3",
-        mapa: "../graficos-interativos/mapas/mapa-jane-nascimento.html"
+        mapa: "../graficos-interativos/mapas/mapa-jane-klebia.html"
     },
     {
         nome: "Gabriel Magno Pereira Cruz",
@@ -43,7 +58,7 @@ const deputados = [
     {
         nome: "João Hermeto de Oliveira Neto",
         foto: "https://www.cl.df.gov.br/documents/10162/33185635/Hermeto+2023-2026+%2802%29.jpg/8a33f9ce-bafb-e919-f01e-a6979f364ba1?version=1.0&t=1740158485104&download=true&imageThumbnail=3",
-        mapa: "../graficos-interativos/mapas/mapa-hermeto-oliveira.html"
+        mapa: "../graficos-interativos/mapas/mapa-joao-hermeto.html"
     },
     {
         nome: "Iolando Almeida de Souza",
@@ -58,7 +73,7 @@ const deputados = [
     {
         nome: "Joao Alves Cardoso",
         foto: "https://www.cl.df.gov.br/documents/10162/33185635/Jo%C3%A3o+Cardoso+-+2023-2026.jpg/ce19afda-e115-c8bd-a1b4-e6b51bc206c5?version=1.0&t=1740158488484&download=true&imageThumbnail=3",
-        mapa: "../graficos-interativos/mapas/mapa-cardoso-catolico.html"
+        mapa: "../graficos-interativos/mapas/mapa-joao-alves.html"
     },
     {
         nome: "Joaquim Domingos Roriz Neto",
@@ -83,7 +98,7 @@ const deputados = [
     {
         nome: "Daniel de Castro Sousa",
         foto: "https://www.cl.df.gov.br/documents/10162/33185635/Pastor+Daniel.jpg/f14ee9c6-aa51-290e-9a34-d8377b6ca83f?version=1.0&t=1740158600472&download=true&imageThumbnail=3",
-        mapa: "../graficos-interativos/mapas/mapa-pastor-daniel.html"
+        mapa: "../graficos-interativos/mapas/mapa-daniel-de.html"
     },
     {
         nome: "Paula Moreno Paro Belmonte",
@@ -93,7 +108,7 @@ const deputados = [
     {
         nome: "Pedro Paulo de Oliveira",
         foto: "https://www.cl.df.gov.br/documents/10162/22349802/Pepa.jpg/8614b90b-7e38-1cfe-3a06-a4c85e008735?version=1.0&t=1670962513441&download=true&imageThumbnail=3",
-        mapa: "../graficos-interativos/mapas/mapa-pepa-paulo.html"
+        mapa: "../graficos-interativos/mapas/mapa-pedro-paulo.html"
     },
     {
         nome: "Ricardo Vale da Silva",
@@ -103,12 +118,12 @@ const deputados = [
     {
         nome: "Robério Bandeira de Negreiros Filho",
         foto: "https://www.cl.df.gov.br/documents/10162/33267976/rob%C3%A9rio.jpg/fa782200-a517-f37a-5a31-eed7f608c1e5?version=1.0&t=1740158412737&download=true&imageThumbnail=3",
-        mapa: "../graficos-interativos/mapas/mapa-roberto-bandeira.html"
+        mapa: "../graficos-interativos/mapas/mapa-roberio-bandeira.html"
     },
     {
         nome: "Bernardo Rogério Mata de Araújo Junior",
         foto: "https://www.cl.df.gov.br/documents/10162/22349802/Rog%C3%A9rio+Morro+da+Cruz.jpg/211ece5e-f22e-f67c-2c55-2acc7b2ff5a5?version=1.0&t=1744844221427&download=true&imageThumbnail=3",
-        mapa: "../graficos-interativos/mapas/mapa-bernado-mata.html"
+        mapa: "../graficos-interativos/mapas/mapa-bernardo-rogerio.html"
     },
     {
         nome: "Roosevelt Vilela Pires",
@@ -118,7 +133,7 @@ const deputados = [
     {
         nome: "Thiago de Araújo Macieira Manzoni",
         foto: "https://www.cl.df.gov.br/documents/10162/33185635/Thiago+Manzoni.jpg/14fc2a61-eae1-fb75-6869-31ecec609cac?version=1.1&t=1740158488041&download=true&imageThumbnail=3",
-        mapa: "../graficos-interativos/mapas/mapa-thiago-macieira.html"
+        mapa: "../graficos-interativos/mapas/mapa-thiago-de.html"
     },
     {
         nome: "Wellington Luiz de Souza Silva",
