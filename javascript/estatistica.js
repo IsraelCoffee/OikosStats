@@ -8,7 +8,7 @@ const deputados = [
     {
         nome: "Fábio Felix Silveira",
         foto: "https://www.cl.df.gov.br/documents/10162/33185635/F%C3%A1bio+Felix+-+2023-2026.jpg/f2661d4d-16ad-c0c5-80f5-6175a3c2f9cd?version=1.1&t=1740158487152&download=true&imageThumbnail=3",
-        mapa: "../graficos-interativos/mapas/leaflet_fabio_felix_silveira"
+        mapa: "../graficos-interativos/mapas/mapa-fabio-felix.html"
     },
     {
         nome: "Eduardo Weyne Pedrosa",
