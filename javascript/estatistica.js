@@ -199,3 +199,22 @@ if (btnRevelar) {
         btnRevelar.classList.add("escondido");
     });
 }
+
+// ==========================================
+// Proteção de scroll no mapa (evita "prender" o zoom da página)
+// ==========================================
+const mapaWrapper = document.querySelector(".mapa-protegido");
+const mapaOverlay = document.querySelector(".mapa-overlay");
+
+if (mapaWrapper && mapaOverlay) {
+    // Clique na camada: libera a interação com o mapa
+    mapaOverlay.addEventListener("click", () => {
+        mapaWrapper.classList.add("ativo");
+    });
+
+    // Mouse saiu da área do mapa: volta a bloquear
+    mapaWrapper.addEventListener("mouseleave", () => {
+        mapaWrapper.classList.remove("ativo");
+    });
+}
+

@@ -6,17 +6,7 @@ body h2 {
     padding-bottom: 20px;
 }
 
-/*INSTAGRAM*/
-
-.grafico-estatico img {
-    max-width: 900px;
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-/*ANIMAÇÃO*/
+/*ANIMAÇÃO DEPUTADO MAIS VOTADO*/
 
 .revelacao-wrapper {
     text-align: center;
@@ -76,3 +66,36 @@ body h2 {
     margin: 0.8rem 0;
 }
 
+/*DISTRIBUIÇÃO DE VOTOS EM MAPA*/
+.mapa-protegido {
+    position: relative;
+}
+
+.mapa-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.mapa-overlay span {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-family: var(--fonte-texto);
+    font-size: 0.9rem;
+}
+
+/* Quando ativo (depois do clique), a camada some e libera o mapa */
+.mapa-protegido.ativo .mapa-overlay {
+    display: none;
+}
